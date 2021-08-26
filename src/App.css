@@ -7,7 +7,7 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size:26px; margin: 20px; background-color:rgba(250, 250, 250, 0.5); padding:15px; border-radius: 20px; color:black;
+  font-size:1.5rem; margin: 20px; background-color:rgba(250, 250, 250, 0.5); padding:15px; border-radius: 20px; color:black;
   color: white;
 }
 
@@ -48,4 +48,38 @@ button {
   font-size: large;
   letter-spacing: 0.7px;
   font-weight: 600;
+}
+
+/* Media Queries */
+@media screen and (max-width:1024px){
+  h1 {
+    width: 94%;
+  }
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    margin:5% 0;
+  }
+}
+@media screen and (max-width:768px){
+  h1 {
+    width: 90%;
+  }
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    margin:10% 0;
+  }
+}
+@media screen and (max-width:414px){
+  h1 {
+    width: 84%;
+  }
+  .container img {
+    width: 180%;
+  }
 }
