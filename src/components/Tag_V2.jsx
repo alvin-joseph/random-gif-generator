@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import useGIF from '../hooks/useGIF';
 
 const Tag = () => {
-    const [tag, setTag] = useState('puppies');
+    const [tag, setTag] = useState('cats');
     const [gif, handleClick] = useGIF(tag);
 
     const onChange = e => {

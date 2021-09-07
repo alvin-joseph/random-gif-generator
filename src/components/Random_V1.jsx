@@ -8,14 +8,14 @@ const Random = () => {
     //COMPONENT DID mount on the first render
 
     const fetchGif = () => {
-    const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
-    axios.get(url) //promise
-        .then(res => {
-            const imageSrc = res.data.data.images.downsized_large.url;
-            setGif(imageSrc);
-        }).catch(err => {
-            console.log(err);
-        })
+        const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
+        axios.get(url) //promise
+            .then(res => {
+                const imageSrc = res.data.data.images.downsized_large.url;
+                setGif(imageSrc);
+            }).catch(err => {
+                console.log(err);
+            })
     }
 
     useEffect(() => {
